@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERİ</title>
+</head>
+
+<style> 
+body {
+  background-image: url("arkaplan.png");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+   
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #000;
+}
+
+.omer2 {
+  background-color: #368f6e;
+}
+.omer {
+  background-color: #ff0000;
+}
+.Header{
+    width: 100%;
+}
+.faturates{
+    background-color: rgba(196, 176, 176, 0.76);
+    border: 1px solid rgb(196, 176, 176, 0.76);
+    height: 600px;
+}
+
+#menu1 {
+	width: 770px;
+	height: 105px;
+	margin: 0 auto;
+}
+ 
+#menu1 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ 
+#menu1 li {
+	display: block;
+	float: left;
+	width: 122px;
+	height: 65px;
+	padding: 40px 0 0 0;
+}
+ 
+#menu1 a {
+	display: block;
+	width: 122px;
+	height: 32px;
+	padding: 13px 0 0 0;
+	background: url(images/img02.jpg) no-repeat;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+ 
+#menu1 a:hover {
+	background-image: url(images/img03.jpg);
+}
+ 
+#menu1 .active {
+	padding-top: 35px;
+}
+ 
+#menu1 .active a {
+	height: 37px;
+	padding-top: 16px;
+	background-image: url(images/img04.jpg);
+	color: #327EBE;
+}
+ 
+#menu1 .active a:hover {
+	background-image: url(images/img04.jpg);
+}
+
+
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+
+</style>
+
+<div id="menu1">
+	<ul>
+   
+		<li style="float: left;"  ><a href="index.html" accesskey="1" title="">Anasayfa</a></li>
+		<li style="float: right;" class="active" ><a href="resim.html" accesskey="2" title="">Resimler</a></li>
+		
+	</ul>
+</div>
+
+
+<div class="Header">
+    <div style="width: 400px;margin-left: 40%;">
+</div>
+
+<div class="gallery cf">
+	<div>
+	  <img src="resim/1.jpg" />
+	</div>
+	<div>
+	  <img src="resim/3.jpg" />
+	</div>
+	<div>
+	  <img src="resim/2.jpg" />
+	</div>
+	<div>
+	  <img src="resim/4.jpg" />
+	</div>
+	<div>
+	  <img src="resim/5.jpg" />
+	</div>
+	<div>
+	  <img src="resim/6.jpg" />
+	</div>
+  </div>
+
+</div>
+   
+</body>
+</html>
